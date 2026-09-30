@@ -13,6 +13,9 @@ class RegistroVoti:
     def voto_massimo(self):
         return max(self.voti) if self.voti else None
 
+    def voto_minimo(self):
+        return min(self.voti) if self.voti else None
+
     def __str__(self):
         return f"Voti: {self.voti}"
 
